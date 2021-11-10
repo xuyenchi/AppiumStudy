@@ -1,4 +1,4 @@
-package JavaOOP;
+package JavaOOP_Lession06;
 
 public class Manager extends Employee {
 

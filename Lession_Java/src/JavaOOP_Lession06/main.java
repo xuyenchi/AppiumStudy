@@ -1,6 +1,6 @@
-package JavaOOP;
+package JavaOOP_Lession06;
 
-public class Lession06 {
+public class main {
 	public static void main(String[] args) {
 		// create CEO
 		Employee ceo_01 = new CEO("5988686","Elon Mush", "123 Dien Bien Phu", 24, 1000, 200);
