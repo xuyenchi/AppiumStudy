@@ -1,13 +1,13 @@
-package Lession03;
+package JavaBasic;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Exercises {
+public class Lession03 {
 
 	public static void main(String[] args) {
-		Exercises exercise = new Exercises();
+		Lession03 exercise = new Lession03();
 		exercise.exercise_01();
 		exercise.exercise_02();
 		exercise.exercise_03();
