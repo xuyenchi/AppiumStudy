@@ -1,4 +1,4 @@
-package JavaOOP_Lession06;
+package javaOOP_lession06;
 
 public class main {
 	public static void main(String[] args) {
@@ -29,6 +29,7 @@ public class main {
 		employee_05.showInfo();
 		employee_06.showInfo();
 		employee_07.showInfo();
+		
 		
 	}
 }

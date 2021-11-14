@@ -1,4 +1,4 @@
-package JavaOOP_Lession06;
+package javaOOP_lession06;
 
 import java.util.Scanner;
 

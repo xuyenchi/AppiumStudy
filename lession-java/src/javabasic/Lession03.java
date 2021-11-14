@@ -1,4 +1,4 @@
-package JavaBasic_Lession03;
+package javabasic;
 
 import java.util.ArrayList;
 import java.util.List;
