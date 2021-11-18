@@ -41,7 +41,8 @@ public class Lession03 {
 			password = scanner.nextLine();
 			if (password.equals(myPassword)) {
 				System.out.println("Password is correct!");
-				tryInput = 3;
+				//tryInput = 3;
+				break;
 
 			} else {
 				System.out.println("Password is incorrect!");
