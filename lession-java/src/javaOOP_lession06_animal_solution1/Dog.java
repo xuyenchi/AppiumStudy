@@ -1,4 +1,4 @@
-package javaOOP_lession06_animal;
+package javaOOP_lession06_animal_solution1;
 
 public class Dog extends Animals {
 

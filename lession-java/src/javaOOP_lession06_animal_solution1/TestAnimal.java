@@ -1,4 +1,4 @@
-package javaOOP_lession06_animal;
+package javaOOP_lession06_animal_solution1;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,15 +20,13 @@ public class TestAnimal {
 		speed.put(horse.getName(), horse.run());
 		speed.put(tiger.getName(), tiger.run());
 		speed.put(dog.getName(), dog.run());
-
-		Iterator<Map.Entry<String, Integer>> iterator = speed.entrySet().iterator();
-
+// chay thu de biet thang nao lon nhat
+//		Iterator<Map.Entry<String, Integer>> iterator = speed.entrySet().iterator();
 //		System.out.println("Các entry có trong hashMap là: ");
 //		while (iterator.hasNext()) {
 //			System.out.println(iterator.next());
 //		}
 
-		// System.out.println("winner is :" + horse.getClass().getSimpleName());
 		run_Competition(speed, horse, tiger, dog);
 	}
 
