@@ -20,12 +20,6 @@ public class TestAnimal {
 		speed.put(horse.getName(), horse.run());
 		speed.put(tiger.getName(), tiger.run());
 		speed.put(dog.getName(), dog.run());
-// chay thu de biet thang nao lon nhat
-//		Iterator<Map.Entry<String, Integer>> iterator = speed.entrySet().iterator();
-//		System.out.println("Các entry có trong hashMap là: ");
-//		while (iterator.hasNext()) {
-//			System.out.println(iterator.next());
-//		}
 
 		run_Competition(speed, horse, tiger, dog);
 	}
@@ -33,14 +27,22 @@ public class TestAnimal {
 	public static void run_Competition(Map<String, Integer> speed, Horse horse, Tiger tiger, Dog dog) {
 		int maxSpeed = 0;
 		String winnerName = "";
+		// chạy vòng lặp đầu tiên tìm ptu lớn nhất
 		for (Map.Entry<String, Integer> entry : speed.entrySet()) {
-			if (entry.getValue() >= maxSpeed) {
+			if (entry.getValue() > maxSpeed) {
 				maxSpeed = entry.getValue();
-				winnerName = winnerName.replace(winnerName, entry.getKey());
 			}
 		}
+		// chạy lần 2 để tìm ptư bằng maxSpeed, vì có thể có nhiều con vật có tốc độ = maxSpeed
+		for (Map.Entry<String, Integer> entry : speed.entrySet()) {
+			if (entry.getValue() == maxSpeed) {
+				maxSpeed = entry.getValue();
+				winnerName = winnerName.replace(winnerName, entry.getKey());
+				System.out.println(
+						"winner is :" + winnerObject(winnerName, horse, tiger, dog) + " with speed :" + maxSpeed);
 
-		System.out.println("winner is :" + winnerObject(winnerName, horse, tiger, dog) + " with speed :" + maxSpeed);
+			}
+		}
 
 	}
 

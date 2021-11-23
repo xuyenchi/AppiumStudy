@@ -22,27 +22,32 @@ public class TestAnimal {
 		speed.put(tiger.getName(), tiger.run());
 		speed.put(dog.getName(), dog.run());
 		Iterator<Map.Entry<String, Integer>> iterator = speed.entrySet().iterator();
-		System.out.println("Các entry có trong hashMap là: ");
-		while (iterator.hasNext()) {
-			System.out.println(iterator.next());
-		}
 
 		run_Competition(speed, horse, tiger, dog);
+
 	}
 
 	public static void run_Competition(Map<String, Integer> speed, Animals horse, Animals tiger, Animals dog) {
 		int maxSpeed = 0;
 		String winnerName = "";
+		// tim speed lon nhat trong mang
 		for (Map.Entry<String, Integer> entry : speed.entrySet()) {
-			if (entry.getValue() >= maxSpeed) {
+			if (entry.getValue() > maxSpeed) {
 				maxSpeed = entry.getValue();
-				winnerName = winnerName.replace(winnerName, entry.getKey());
-
 			}
 
 		}
 
-		System.out.println("winner is :" + winnerName + " with speed :" + maxSpeed);
+		// so sanh mang, cai nao = maxspeed thi in ra vi co the có nhiều con vật random
+		// speed đều = max
+		for (Map.Entry<String, Integer> entry : speed.entrySet()) {
+			if (entry.getValue() == maxSpeed) {
+				maxSpeed = entry.getValue();
+				winnerName = winnerName.replace(winnerName, entry.getKey());
+				System.out.println("winner is :" + winnerName + " with speed :" + maxSpeed);
+
+			}
+		}
 
 	}
 
