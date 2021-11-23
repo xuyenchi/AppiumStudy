@@ -37,7 +37,7 @@ public class main {
 		System.out.println("Input ISBN you want to retrieve:");
 		String ISBN = scanner.nextLine();
 
-		for (int i = 0; i < listBook.size(); i++) {
+		for (int i = 0; i <= listBook.size()-4; i=i+4) {
 			if (listBook.get(i).equals(ISBN)) {
 				System.out.println("****Your book****");
 				System.out.println("ISBN:" + listBook.get(i));

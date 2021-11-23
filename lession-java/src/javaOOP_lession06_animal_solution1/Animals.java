@@ -31,9 +31,8 @@ public class Animals {
 	}
 
 	public int run() {
-		int speed = 0;
 		Random  random = new Random ();
-		speed = random.nextInt(this.maxSpeed);
+		int speed = random.nextInt(this.maxSpeed);
 		return speed;
 	}
 

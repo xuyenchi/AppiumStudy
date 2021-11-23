@@ -34,7 +34,7 @@ public class TestAnimal {
 		int maxSpeed = 0;
 		String winnerName = "";
 		for (Map.Entry<String, Integer> entry : speed.entrySet()) {
-			if (entry.getValue() > maxSpeed) {
+			if (entry.getValue() >= maxSpeed) {
 				maxSpeed = entry.getValue();
 				winnerName = winnerName.replace(winnerName, entry.getKey());
 			}
