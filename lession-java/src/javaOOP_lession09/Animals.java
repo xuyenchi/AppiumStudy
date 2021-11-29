@@ -3,7 +3,7 @@ package javaOOP_lession09;
 public abstract class Animals {
 
 	private String name;
-	private int leg;
+	protected int leg;
 
 	public Animals(String name, int leg) {
 		this.name = name;
@@ -27,5 +27,13 @@ public abstract class Animals {
 	}
 
 	public abstract double speed();
+
+	public boolean checkLeg(int leg) {
+		this.leg = leg;
+		if (this.leg == 4)
+			return true;
+		else
+			return false;
+	}
 
 }

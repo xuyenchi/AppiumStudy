@@ -13,9 +13,12 @@ public class Horse extends Animals {
 
 	@Override
 	public double speed() {
-		Random rd = new Random();
-		double speed = minSpeed + (maxSpeed - minSpeed) * rd.nextDouble();
+		double speed = 0;
+		if (checkLeg(this.leg)) {
+			Random rd = new Random();
+			speed = minSpeed + (maxSpeed - minSpeed) * rd.nextDouble();
+		}
+
 		return speed;
 	}
-
 }
