@@ -42,17 +42,15 @@ public class StoreBook {
 				BufferedReader br = new BufferedReader(isr);
 
 		) {
-			String data = br.readLine();
-			while (data != null) {
-				String[] dataBook = data.split(";");
+			String dataLine = br.readLine();
+			while (dataLine != null) {
+				String[] dataBook = dataLine.split(";");
 				String ISBN = dataBook[0];
 				String title = dataBook[1];
 				String author = dataBook[2];
-
 				int year = Integer.parseInt(dataBook[3]);
-				System.out.print("data la : " + ISBN + "," + title + "," + author + "," + year);
 				listBooks.add(new Book(ISBN, title, author, year));
-				br.readLine();
+				dataLine= br.readLine();
 			}
 		} catch (Exception e) {
 

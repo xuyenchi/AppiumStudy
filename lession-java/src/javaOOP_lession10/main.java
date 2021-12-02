@@ -13,7 +13,6 @@ public class main {
 		String filePath = System.getProperty("user.dir") + "/bookXuyen.txt";
 		List<Book> listBooks = new ArrayList<Book>();
 		List<Book> readBooks = StoreBook.readBook(filePath);
-
 		Scanner scanner = new Scanner(System.in);
 		List<String> listBook = new ArrayList<String>();
 		boolean tryInput = true;
@@ -28,7 +27,7 @@ public class main {
 				addBook(listBooks);
 				StoreBook.saveBook(listBooks, filePath);
 			} else if (myInput == 2) {
-				//retrieveBook(readBooks);
+				retrieveBook(readBooks);
 			} else if (myInput == 0) {
 				tryInput = false;
 			} else {
@@ -42,7 +41,8 @@ public class main {
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Input ISBN you want to retrieve:");
-		int ISBN = scanner.nextInt();
+		String ISBN = scanner.nextLine();
+
 		for (Book book : listBook) {
 			if (book.getISBN().equals(ISBN)) {
 				System.out.println("****Your book****");
