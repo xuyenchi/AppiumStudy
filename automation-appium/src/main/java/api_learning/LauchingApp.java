@@ -17,7 +17,7 @@ public class LauchingApp {
 			DesiredCapabilities desireCap = new DesiredCapabilities();
 			desireCap.setCapability(MobileCapapilityTypeEx.PLATFORM_NAME, "android");
 			desireCap.setCapability(MobileCapapilityTypeEx.AUTOMATION_NAME, "uiautomator2");
-			desireCap.setCapability(MobileCapapilityTypeEx.UDID, "3200bad15ec4b55f");
+			desireCap.setCapability(MobileCapapilityTypeEx.UDID, "291d0dc1");
 			desireCap.setCapability(MobileCapapilityTypeEx.APP_PACKSGE, "com.wdiodemoapp");
 			desireCap.setCapability(MobileCapapilityTypeEx.APP_ACTIVITY, ".MainActivity");
 
