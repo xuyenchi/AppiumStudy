@@ -11,8 +11,9 @@ import io.appium.java_client.android.AndroidDriver;
 public class LauchingApp {
 
 	public static void main(String[] args) {
+		AppiumDriver<MobileElement> appiumDriver = null;
 		try {
-			AppiumDriver<MobileElement> appiumDriver = null;
+			
 
 			DesiredCapabilities desireCap = new DesiredCapabilities();
 			desireCap.setCapability(MobileCapapilityTypeEx.PLATFORM_NAME, "android");
@@ -22,11 +23,23 @@ public class LauchingApp {
 			desireCap.setCapability(MobileCapapilityTypeEx.APP_ACTIVITY, ".MainActivity");
 
 			URL appiumServer = new URL("http://127.0.0.1:4723/wd/hub");
+			
 			appiumDriver = new AndroidDriver<MobileElement>(appiumServer, desireCap);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
+//		MobileElement loginLable = appiumDriver.findElementByAccessibilityId("Login");
+//		loginLable.click();
+//		// input username
+//		//MobileElement inputUsername = appiumDriver.findElementByAccessibilityId("input-email");
+////		inputUsername.sendKeys("xuyenltn@gmail.com");
+////		// input pass
+////		MobileElement inputPass = appiumDriver.findElementByAccessibilityId("input-password");
+////		inputPass.sendKeys("999999");
+////		// btn login click
+////		MobileElement btnLogin = appiumDriver.findElementByAccessibilityId("button-LOGIN");
+////		btnLogin.click();
 	}
 
 }

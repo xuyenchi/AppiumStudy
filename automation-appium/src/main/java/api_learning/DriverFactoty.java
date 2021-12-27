@@ -1,5 +1,6 @@
 package api_learning;
 
+import java.io.File;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -17,9 +18,17 @@ public class DriverFactoty {
 	private static AndroidDriver<MobileElement> androidDriver;
 
 	public static void startAppiumServer() {
-		AppiumServiceBuilder appiumServiceBuilder = new AppiumServiceBuilder();
-		appiumServiceBuilder.withIPAddress("127.0.0.1").usingAnyFreePort();
-		appiumServer = AppiumDriverLocalService.buildService(appiumServiceBuilder);
+//		AppiumServiceBuilder appiumServiceBuilder = new AppiumServiceBuilder();
+//		appiumServiceBuilder.withIPAddress("127.0.0.1").usingAnyFreePort();
+		
+		//appiumServer = AppiumDriverLocalService.buildService(appiumServiceBuilder);
+		AppiumServiceBuilder appiumServerBuilder = new AppiumServiceBuilder();
+       // appiumServerBuilder.withArgument(AndroidServerFlagEx.ALLOW_INSECURE, "chromedriver_autodownload");
+        appiumServerBuilder.withIPAddress("127.0.0.1").usingAnyFreePort();
+        appiumServerBuilder.usingDriverExecutable(new File("/usr/local/bin/node"));
+        appiumServerBuilder.withAppiumJS(new File("/usr/local/lib/node_modules/appium"));
+        appiumServer = AppiumDriverLocalService.buildService(appiumServerBuilder);
+       // appiumServer.start();
 		appiumServer.start();
 	}
 
