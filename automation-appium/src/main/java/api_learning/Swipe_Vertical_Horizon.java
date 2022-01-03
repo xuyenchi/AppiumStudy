@@ -15,7 +15,7 @@ import io.appium.java_client.functions.ExpectedCondition;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class SwipeVertical {
+public class Swipe_Vertical_Horizon {
 	public static void main(String[] args) {
 		DriverFactoty.startAppiumServer();
 		AndroidDriver<MobileElement> androidDriver = DriverFactoty.getAndroidDriver();
