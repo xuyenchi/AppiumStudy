@@ -1,11 +1,11 @@
-package pages;
+package models.pages;
 
 import org.openqa.selenium.By;
 
-import components.global.BottomNavComponent;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
+import models.components.global.BottomNavComponent;
 
 public class LoginPage {
 	private final AppiumDriver<MobileElement> appiumDriver;

@@ -7,11 +7,11 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
-import components.global.BottomNavComponent;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import pages.LoginPage;
+import models.components.global.BottomNavComponent;
+import models.pages.LoginPage;
 
 public class TestLoginPage {
 

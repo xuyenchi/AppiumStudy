@@ -1,0 +1,26 @@
+[
+	{
+		"username":"Jennie",
+		"password":"123456789",
+		"info":{
+			"age":26
+		}
+		
+	},
+	{
+		"username":"Lisa",
+		"password":"99999999",
+		"info":{
+			"age":42
+		}
+		
+	},
+	{
+		"username":"Rose",
+		"password":"99999999",
+		"info":{
+			"age":29
+		}
+		
+	}
+]

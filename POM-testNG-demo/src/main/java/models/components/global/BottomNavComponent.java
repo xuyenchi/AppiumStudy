@@ -1,4 +1,4 @@
-package components.global;
+package models.components.global;
 
 import org.openqa.selenium.By;
 
