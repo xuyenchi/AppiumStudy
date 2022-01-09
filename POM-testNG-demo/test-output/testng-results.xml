@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-03T12:48:43 ICT" name="TestLogin" finished-at="2022-01-03T12:48:43 ICT" duration-ms="43">
+  <suite name="TestLogin" duration-ms="29153" started-at="2022-01-09T23:20:08 ICT" finished-at="2022-01-09T23:20:37 ICT">
     <groups>
     </groups>
-    <test started-at="2022-01-03T12:48:43 ICT" name="athenLoginPage" finished-at="2022-01-03T12:48:43 ICT" duration-ms="43">
-      <class name="maintest.Test2">
-        <test-method signature="tc()[pri:0, instance:maintest.Test2@6b8ca3c8]" started-at="2022-01-03T12:48:43 ICT" name="tc" finished-at="2022-01-03T12:48:43 ICT" duration-ms="6" status="PASS">
+    <test name="athenLoginPage" duration-ms="29153" started-at="2022-01-09T23:20:08 ICT" finished-at="2022-01-09T23:20:37 ICT">
+      <class name="maintest.TestLoginPageWithBaseTestV12">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:maintest.TestLoginPageWithBaseTestV12@2de8284b]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-01-09T23:20:25 ICT" finished-at="2022-01-09T23:20:25 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc -->
-      </class> <!-- maintest.Test2 -->
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC01_validLogin()[pri:0, instance:maintest.TestLoginPageWithBaseTestV12@2de8284b]" name="TC01_validLogin" duration-ms="11937" started-at="2022-01-09T23:20:25 ICT" finished-at="2022-01-09T23:20:37 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_validLogin -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:maintest.TestLoginPageWithBaseTestV12@2de8284b]" name="afterClass" is-config="true" duration-ms="539" started-at="2022-01-09T23:20:37 ICT" finished-at="2022-01-09T23:20:37 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- maintest.TestLoginPageWithBaseTestV12 -->
+      <class name="maintest.TestLoginPageWithBaseTestV1">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@75881071]" name="beforeClass" is-config="true" duration-ms="17" started-at="2022-01-09T23:20:08 ICT" finished-at="2022-01-09T23:20:08 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC01_validLogin()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@75881071]" name="TC01_validLogin" duration-ms="13701" started-at="2022-01-09T23:20:08 ICT" finished-at="2022-01-09T23:20:22 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_validLogin -->
+        <test-method status="PASS" signature="TC02()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@75881071]" name="TC02" duration-ms="2360" started-at="2022-01-09T23:20:22 ICT" finished-at="2022-01-09T23:20:24 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@75881071]" name="afterClass" is-config="true" duration-ms="512" started-at="2022-01-09T23:20:24 ICT" finished-at="2022-01-09T23:20:25 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- maintest.TestLoginPageWithBaseTestV1 -->
     </test> <!-- athenLoginPage -->
   </suite> <!-- TestLogin -->
 </testng-results>
