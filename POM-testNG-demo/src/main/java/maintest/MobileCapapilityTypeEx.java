@@ -8,4 +8,5 @@ public interface MobileCapapilityTypeEx extends MobileCapabilityType {
 	String UDID = "udid";
 	String APP_PACKSGE = "appPackage";
 	String APP_ACTIVITY = "appActivity";
+	String SYSTEM_PORT = "systemPort";
 }
