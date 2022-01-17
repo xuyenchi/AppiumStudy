@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Mon Jan 17 22:05:34 ICT 2022","Mon Jan 17 22:05:34 ICT 2022","3","TestLogin","athenLoginPage","maintest.TestLoginPageWithBaseTestV12","maintest.TestLoginPageWithBaseTestV12","afterMethod","afterMethod",""
+"broken","Mon Jan 17 22:05:34 ICT 2022","Mon Jan 17 22:05:34 ICT 2022","4","TestLogin","athenLoginPage","maintest.TestLoginPageWithBaseTestV1","maintest.TestLoginPageWithBaseTestV1","afterMethod","afterMethod",""
+"failed","Mon Jan 17 22:11:45 ICT 2022","Mon Jan 17 22:12:03 ICT 2022","17239","TestLogin","athenLoginPage","maintest.TestLoginPageWithBaseTestV1","maintest.TestLoginPageWithBaseTestV1","TC01_validLogin","TC01_validLogin",""
+"broken","Mon Jan 17 22:12:12 ICT 2022","Mon Jan 17 22:12:12 ICT 2022","89","TestLogin","athenLoginPage","maintest.TestLoginPageWithBaseTestV1","maintest.TestLoginPageWithBaseTestV1","TC02","TC02",""
+"passed","Mon Jan 17 22:12:22 ICT 2022","Mon Jan 17 22:12:35 ICT 2022","12103","TestLogin","athenLoginPage","maintest.TestLoginPageWithBaseTestV12","maintest.TestLoginPageWithBaseTestV12","TC01_validLogin","TC01_validLogin",""

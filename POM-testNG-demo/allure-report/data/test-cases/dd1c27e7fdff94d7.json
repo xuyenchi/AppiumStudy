@@ -1,0 +1,164 @@
+{
+  "uid" : "dd1c27e7fdff94d7",
+  "name" : "TC01_validLogin",
+  "fullName" : "maintest.TestLoginPageWithBaseTestV12.TC01_validLogin",
+  "historyId" : "dcfd49c2dc2cc964dd098350ce52fbe1",
+  "time" : {
+    "start" : 1642432342898,
+    "stop" : 1642432355001,
+    "duration" : 12103
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 6,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642432342883,
+      "stop" : 1642432342883,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "Screenshot tcs fail",
+    "time" : {
+      "start" : 1642432355007,
+      "stop" : 1642432355008,
+      "duration" : 1
+    },
+    "description" : "Screenshot tcs fail",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1642432355009,
+      "stop" : 1642432355661,
+      "duration" : 652
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "maintest.TestLoginPageWithBaseTestV12"
+  }, {
+    "name" : "testClass",
+    "value" : "maintest.TestLoginPageWithBaseTestV12"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC01_validLogin"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "suite",
+    "value" : "athenLoginPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "maintest.TestLoginPageWithBaseTestV12"
+  }, {
+    "name" : "host",
+    "value" : "Air-cua-Le"
+  }, {
+    "name" : "thread",
+    "value" : "2114@Air-cua-Le.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f4c95ff1b54903fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642432132049,
+        "stop" : 1642432144842,
+        "duration" : 12793
+      }
+    }, {
+      "uid" : "ed87a54a2339bad2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642431984653,
+        "stop" : 1642431998068,
+        "duration" : 13415
+      }
+    }, {
+      "uid" : "a4b581ea017c1af3",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1642431934698,
+        "stop" : 1642431934726,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "9ffe2112a417210",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642431395070,
+        "stop" : 1642431407805,
+        "duration" : 12735
+      }
+    }, {
+      "uid" : "e68362749ade950d",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1642431336155,
+        "stop" : 1642431336188,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "433cd37b10c784d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642431032834,
+        "stop" : 1642431046240,
+        "duration" : 13406
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dd1c27e7fdff94d7.json",
+  "parameterValues" : [ ]
+}

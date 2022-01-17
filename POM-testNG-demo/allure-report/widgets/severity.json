@@ -1,0 +1,51 @@
+[ {
+  "uid" : "e0c368f7a1e7fb97",
+  "name" : "TC02",
+  "time" : {
+    "start" : 1642432332835,
+    "stop" : 1642432332924,
+    "duration" : 89
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dd1c27e7fdff94d7",
+  "name" : "TC01_validLogin",
+  "time" : {
+    "start" : 1642432342898,
+    "stop" : 1642432355001,
+    "duration" : 12103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45fd2365e7ac1b61",
+  "name" : "TC01_validLogin",
+  "time" : {
+    "start" : 1642432305800,
+    "stop" : 1642432323039,
+    "duration" : 17239
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a673e16ee6fed07",
+  "name" : "afterMethod",
+  "time" : {
+    "start" : 1642431934634,
+    "stop" : 1642431934638,
+    "duration" : 4
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8ab49f40b34f704a",
+  "name" : "afterMethod",
+  "time" : {
+    "start" : 1642431934754,
+    "stop" : 1642431934757,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

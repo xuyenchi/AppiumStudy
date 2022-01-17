@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import basetest.BaseTestFirstVersion;
@@ -25,7 +26,7 @@ public class TestLoginPageWithBaseTestV1 extends BaseTestFirstVersion {
 		Login loginData = DataObjectBuilder.builderDataOject("/data/ValidLoginData.json", Login[].class)[0];
 		LoginFlow loginFlow = new LoginFlow(appiumDriver, loginData);
 		loginFlow.login().verifyLogin();
-
+		Assert.assertEquals("hello", "success");
 	}
 
 	@Test

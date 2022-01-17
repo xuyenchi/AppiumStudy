@@ -1,0 +1,112 @@
+{
+  "uid" : "f4c95ff1b54903fb",
+  "name" : "TC01_validLogin",
+  "fullName" : "maintest.TestLoginPageWithBaseTestV12.TC01_validLogin",
+  "historyId" : "dcfd49c2dc2cc964dd098350ce52fbe1",
+  "time" : {
+    "start" : 1642432132049,
+    "stop" : 1642432144842,
+    "duration" : 12793
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1642432132035,
+      "stop" : 1642432132035,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1642432144847,
+      "stop" : 1642432144847,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "afterClass1",
+    "time" : {
+      "start" : 1642432144849,
+      "stop" : 1642432145379,
+      "duration" : 530
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "maintest.TestLoginPageWithBaseTestV12"
+  }, {
+    "name" : "testClass",
+    "value" : "maintest.TestLoginPageWithBaseTestV12"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC01_validLogin"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "suite",
+    "value" : "athenLoginPage"
+  }, {
+    "name" : "subSuite",
+    "value" : "maintest.TestLoginPageWithBaseTestV12"
+  }, {
+    "name" : "host",
+    "value" : "Air-cua-Le"
+  }, {
+    "name" : "thread",
+    "value" : "1873@Air-cua-Le.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f4c95ff1b54903fb.json",
+  "parameterValues" : [ ]
+}

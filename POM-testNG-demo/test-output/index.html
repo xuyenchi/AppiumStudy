@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-TestLogin">
-                    <span>RunParallel.xml</span>
+                    <span>RunLoginPageWithBaseTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-TestLogin">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content failed suite-TestLogin">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestLogin" title="maintest.TestABC" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestLogin" title="maintest.TestLoginPageWithBaseTestV1" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestLogin" title="maintest.TestLoginPageWithBaseTestV1" hash-for-method="TC02">TC02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TestLogin -->
@@ -118,7 +123,7 @@
                     <div class="method-list-content passed suite-TestLogin">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestLogin" title="maintest.TestABC" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestLogin" title="maintest.TestLoginPageWithBaseTestV12" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestLogin -->
@@ -136,7 +141,7 @@
           <div class="suite-TestLogin-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">maintest.TestABC</span>
+              <span class="class-name">maintest.TestLoginPageWithBaseTestV1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -144,13 +149,25 @@
                   <a name="TC01_validLogin">
                   </a> <!-- TC01_validLogin -->
                   <span class="method-name">TC01_validLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
+                  <div class="stack-trace">java.lang.AssertionError: expected [success] but found [hello]
+	at maintest.TestLoginPageWithBaseTestV1.TC01_validLogin(TestLoginPageWithBaseTestV1.java:29)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02">
+                  </a> <!-- TC02 -->
+                  <span class="method-name">TC02</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Air-cua-Le&apos;, ip: &apos;2405:4803:c84c:7170:ffff:ffff:ffff:ffe6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_311&apos;
+System info: host: &apos;Air-cua-Le&apos;, ip: &apos;2405:4803:c84c:7170:ffff:ffff:ffff:ffc6%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_311&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, systemPort: 8400, udid: 9MU9X18B10W00570}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: ATU-L42, deviceName: 9MU9X18B10W00570, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 9MU9X18B10W00570, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: android, platformVersion: 8.0.0, statBarHeight: 48, systemPort: 8400, takesScreenshot: true, udid: 9MU9X18B10W00570, viewportRect: {height: 1310, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: 3d898565-f857-4589-a862-d03f2221852b
-*** Element info: {Using=accessibility id, value=input-password}
+Capabilities {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, udid: 3200bad15ec4b55f}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A750GN, deviceName: 3200bad15ec4b55f, deviceScreenDensity: 480, deviceScreenSize: 1080x2220, deviceUDID: 3200bad15ec4b55f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, udid: 3200bad15ec4b55f, viewportRect: {height: 2004, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: d802d4ac-a2b7-40a2-95ad-6ef63a9b6c1d
+*** Element info: {Using=accessibility id, value=Login}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -170,15 +187,10 @@ Session ID: 3d898565-f857-4589-a862-d03f2221852b
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at models.pages.LoginPage.inputPassword(LoginPage.java:44)
-	at testflow.LoginFlow.login(LoginFlow.java:23)
-	at maintest.TestABC.TC01_validLogin(TestABC.java:28)
+	at models.components.global.BottomNavComponent.clickLoginTab(BottomNavComponent.java:22)
+	at maintest.TestLoginPageWithBaseTestV1.TC02(TestLoginPageWithBaseTestV1.java:35)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 22 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -187,7 +199,7 @@ Session ID: 3d898565-f857-4589-a862-d03f2221852b
           <div class="suite-TestLogin-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">maintest.TestABC</span>
+              <span class="class-name">maintest.TestLoginPageWithBaseTestV12</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -202,27 +214,19 @@ Session ID: 3d898565-f857-4589-a862-d03f2221852b
         </div> <!-- panel TestLogin -->
         <div panel-name="test-xml-TestLogin" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/xuyenchi/Documents/appium-study/appium-study/POM-testNG-demo/test-suits/RunParallel.xml</span>
+            <span class="header-content">/Users/xuyenchi/Documents/appium/appium-study/POM-testNG-demo/test-suits/RunLoginPageWithBaseTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;10&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestLogin&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;10&quot; name=&quot;athenLoginPage&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;udid&quot; value=&quot;3200bad15ec4b55f&quot;/&gt;
-    &lt;parameter name=&quot;systemPort&quot; value=&quot;8300&quot;/&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestLogin&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;athenLoginPage&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;maintest.TestABC&quot;/&gt;
+      &lt;class name=&quot;maintest.TestLoginPageWithBaseTestV1&quot;/&gt;
+      &lt;class name=&quot;maintest.TestLoginPageWithBaseTestV12&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- athenLoginPage --&gt;
-  &lt;test thread-count=&quot;10&quot; name=&quot;athenLoginPage 2&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;udid&quot; value=&quot;9MU9X18B10W00570&quot;/&gt;
-    &lt;parameter name=&quot;systemPort&quot; value=&quot;8400&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;maintest.TestABC&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- athenLoginPage 2 --&gt;
 &lt;/suite&gt; &lt;!-- TestLogin --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,10 +238,7 @@ Session ID: 3d898565-f857-4589-a862-d03f2221852b
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">athenLoginPage (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">athenLoginPage 2 (1 class)</span>
+                <span class="test-name">athenLoginPage (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,20 +264,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC01_validLogin')
-data.setCell(0, 2, 'maintest.TestABC')
-data.setCell(0, 3, 13942);
+data.setCell(0, 2, 'maintest.TestLoginPageWithBaseTestV1')
+data.setCell(0, 3, 17303);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC01_validLogin')
-data.setCell(1, 2, 'maintest.TestABC')
-data.setCell(1, 3, 13873);
+data.setCell(1, 2, 'maintest.TestLoginPageWithBaseTestV12')
+data.setCell(1, 3, 12088);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC02')
+data.setCell(2, 2, 'maintest.TestLoginPageWithBaseTestV1')
+data.setCell(2, 3, 107);
 window.suiteTableData['TestLogin']= { tableData: data, tableDiv: 'times-div-TestLogin'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-TestLogin">
               </div> <!-- times-div-TestLogin -->
             </div> <!-- times-div -->
@@ -302,35 +307,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">maintest.TestABC</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest(3200bad15ec4b55f, 8300)</span>
+              <div class="chronological-class-name">maintest.TestLoginPageWithBaseTestV1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest(9MU9X18B10W00570, 8400)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">TC01_validLogin</span>
-                <span class="method-start">68 ms</span>
-              </div> <!-- test-method -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC01_validLogin</span>
-                <span class="method-start">68 ms</span>
+                <span class="method-start">77 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">13962 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC01_validLogin status=FAILURE method=TestLoginPageWithBaseTestV1.TC01_validLogin()...)</span>
+                <span class="method-start">17545 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">afterTest</span>
-                <span class="method-start">14015 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-name">TC02</span>
+                <span class="method-start">27173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC02 status=FAILURE method=TestLoginPageWithBaseTestV1.TC02()[pri:0, instance:maint...)</span>
+                <span class="method-start">27288 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">36713 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">maintest.TestLoginPageWithBaseTestV12</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">37243 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC01_validLogin</span>
+                <span class="method-start">37244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC01_validLogin status=SUCCESS method=TestLoginPageWithBaseTestV12.TC01_validLogin(...)</span>
+                <span class="method-start">49365 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">49370 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

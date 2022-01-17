@@ -1,0 +1,462 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Air-cua-Le",
+    "children" : [ {
+      "name" : "1337@Air-cua-Le.main(1)",
+      "children" : [ {
+        "name" : "TC01_validLogin",
+        "uid" : "802b8b235a136c4",
+        "parentUid" : "707b823512e1c8c1c2bee0a5c67b1a28",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431333981,
+          "stop" : 1642431335869,
+          "duration" : 1888
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "e68362749ade950d",
+        "parentUid" : "707b823512e1c8c1c2bee0a5c67b1a28",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431336155,
+          "stop" : 1642431336188,
+          "duration" : 33
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC02",
+        "uid" : "e213d9279d222f1a",
+        "parentUid" : "707b823512e1c8c1c2bee0a5c67b1a28",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1642431336135,
+          "stop" : 1642431336138,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "afterMethod",
+        "uid" : "86832aabed89699d",
+        "parentUid" : "707b823512e1c8c1c2bee0a5c67b1a28",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431336216,
+          "stop" : 1642431336220,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "afterMethod",
+        "uid" : "c573b81ed3756f59",
+        "parentUid" : "707b823512e1c8c1c2bee0a5c67b1a28",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431336047,
+          "stop" : 1642431336052,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "707b823512e1c8c1c2bee0a5c67b1a28"
+    }, {
+      "name" : "1121@Air-cua-Le.main(1)",
+      "children" : [ {
+        "name" : "TC01_validLogin",
+        "uid" : "433cd37b10c784d7",
+        "parentUid" : "13066cfb2afafdc92b89ad4c6ae50f0a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642431032834,
+          "stop" : 1642431046240,
+          "duration" : 13406
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC02",
+        "uid" : "eda063fd404ed5da",
+        "parentUid" : "13066cfb2afafdc92b89ad4c6ae50f0a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642431030114,
+          "stop" : 1642431032214,
+          "duration" : 2100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "5cb91ee03bae9bff",
+        "parentUid" : "13066cfb2afafdc92b89ad4c6ae50f0a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642431011664,
+          "stop" : 1642431029895,
+          "duration" : 18231
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "13066cfb2afafdc92b89ad4c6ae50f0a"
+    }, {
+      "name" : "1873@Air-cua-Le.main(1)",
+      "children" : [ {
+        "name" : "TC01_validLogin",
+        "uid" : "4972c081d9a89795",
+        "parentUid" : "fd345ac19c428bdc7223652751a65aa1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642432093834,
+          "stop" : 1642432111996,
+          "duration" : 18162
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "f4c95ff1b54903fb",
+        "parentUid" : "fd345ac19c428bdc7223652751a65aa1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642432132049,
+          "stop" : 1642432144842,
+          "duration" : 12793
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC02",
+        "uid" : "7bc92e002bb91901",
+        "parentUid" : "fd345ac19c428bdc7223652751a65aa1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642432121769,
+          "stop" : 1642432121851,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fd345ac19c428bdc7223652751a65aa1"
+    }, {
+      "name" : "2114@Air-cua-Le.main(1)",
+      "children" : [ {
+        "name" : "TC01_validLogin",
+        "uid" : "dd1c27e7fdff94d7",
+        "parentUid" : "fdace8c65274c717928f9567e70708d3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642432342898,
+          "stop" : 1642432355001,
+          "duration" : 12103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 6,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "45fd2365e7ac1b61",
+        "parentUid" : "fdace8c65274c717928f9567e70708d3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642432305800,
+          "stop" : 1642432323039,
+          "duration" : 17239
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 6,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC02",
+        "uid" : "e0c368f7a1e7fb97",
+        "parentUid" : "fdace8c65274c717928f9567e70708d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642432332835,
+          "stop" : 1642432332924,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 6,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fdace8c65274c717928f9567e70708d3"
+    }, {
+      "name" : "1663@Air-cua-Le.main(1)",
+      "children" : [ {
+        "name" : "afterMethod",
+        "uid" : "8ab49f40b34f704a",
+        "parentUid" : "302b59b97ad3be9c8c514d138749c06b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431934754,
+          "stop" : 1642431934757,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC02",
+        "uid" : "e48f8b805d5099a2",
+        "parentUid" : "302b59b97ad3be9c8c514d138749c06b",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1642431934675,
+          "stop" : 1642431934677,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "a4b581ea017c1af3",
+        "parentUid" : "302b59b97ad3be9c8c514d138749c06b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431934698,
+          "stop" : 1642431934726,
+          "duration" : 28
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "a8fa1fd01cc68023",
+        "parentUid" : "302b59b97ad3be9c8c514d138749c06b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431933183,
+          "stop" : 1642431934492,
+          "duration" : 1309
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "afterMethod",
+        "uid" : "1a673e16ee6fed07",
+        "parentUid" : "302b59b97ad3be9c8c514d138749c06b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431934634,
+          "stop" : 1642431934638,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "302b59b97ad3be9c8c514d138749c06b"
+    }, {
+      "name" : "1687@Air-cua-Le.main(1)",
+      "children" : [ {
+        "name" : "TC02",
+        "uid" : "45eead61138d192f",
+        "parentUid" : "e6f15233d7389aeef68bbfe060ecb6c6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431974728,
+          "stop" : 1642431974797,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "52afd5a1e1183176",
+        "parentUid" : "e6f15233d7389aeef68bbfe060ecb6c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642431945914,
+          "stop" : 1642431963383,
+          "duration" : 17469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "ed87a54a2339bad2",
+        "parentUid" : "e6f15233d7389aeef68bbfe060ecb6c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642431984653,
+          "stop" : 1642431998068,
+          "duration" : 13415
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e6f15233d7389aeef68bbfe060ecb6c6"
+    }, {
+      "name" : "1366@Air-cua-Le.main(1)",
+      "children" : [ {
+        "name" : "TC01_validLogin",
+        "uid" : "5d48c6a7e251dba5",
+        "parentUid" : "d80faa5f623cd0d0b48ecd2ae424991d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642431359554,
+          "stop" : 1642431375122,
+          "duration" : 15568
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC01_validLogin",
+        "uid" : "9ffe2112a417210",
+        "parentUid" : "d80faa5f623cd0d0b48ecd2ae424991d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1642431395070,
+          "stop" : 1642431407805,
+          "duration" : 12735
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC02",
+        "uid" : "824338546d4c689",
+        "parentUid" : "d80faa5f623cd0d0b48ecd2ae424991d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431384838,
+          "stop" : 1642431384919,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d80faa5f623cd0d0b48ecd2ae424991d"
+    } ],
+    "uid" : "3a325e5b0f90e196dda6162abba8796c"
+  } ]
+}

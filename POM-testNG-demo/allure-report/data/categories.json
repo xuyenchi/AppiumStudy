@@ -1,0 +1,93 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "java.lang.NullPointerException",
+      "children" : [ {
+        "name" : "afterMethod",
+        "uid" : "1a673e16ee6fed07",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431934634,
+          "stop" : 1642431934638,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "afterMethod",
+        "uid" : "8ab49f40b34f704a",
+        "parentUid" : "5592898b36d684905e31486a23088bda",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642431934754,
+          "stop" : 1642431934757,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5592898b36d684905e31486a23088bda"
+    }, {
+      "name" : "An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'Air-cua-Le', ip: '2405:4803:c84c:7170:ffff:ffff:ffff:ffc6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, udid: 3200bad15ec4b55f}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A750GN, deviceName: 3200bad15ec4b55f, deviceScreenDensity: 480, deviceScreenSize: 1080x2220, deviceUDID: 3200bad15ec4b55f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, udid: 3200bad15ec4b55f, viewportRect: {height: 2004, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: d802d4ac-a2b7-40a2-95ad-6ef63a9b6c1d\n*** Element info: {Using=accessibility id, value=Login}",
+      "children" : [ {
+        "name" : "TC02",
+        "uid" : "e0c368f7a1e7fb97",
+        "parentUid" : "c39e73aac0c718af6e5a4e3f6f25ac6a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1642432332835,
+          "stop" : 1642432332924,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 6,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c39e73aac0c718af6e5a4e3f6f25ac6a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected [success] but found [hello]",
+      "children" : [ {
+        "name" : "TC01_validLogin",
+        "uid" : "45fd2365e7ac1b61",
+        "parentUid" : "b153c23d4d7ec468c147f3ad9a3c0e51",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642432305800,
+          "stop" : 1642432323039,
+          "duration" : 17239
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 6,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b153c23d4d7ec468c147f3ad9a3c0e51"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

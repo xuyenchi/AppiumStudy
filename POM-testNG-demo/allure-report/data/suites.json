@@ -1,0 +1,106 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "TestLogin",
+    "children" : [ {
+      "name" : "athenLoginPage",
+      "children" : [ {
+        "name" : "maintest.TestLoginPageWithBaseTestV1",
+        "children" : [ {
+          "name" : "afterMethod",
+          "uid" : "1a673e16ee6fed07",
+          "parentUid" : "a58e3d0eb321ae0ddbfdc5fd01ef4c1c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1642431934634,
+            "stop" : 1642431934638,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "TC01_validLogin",
+          "uid" : "45fd2365e7ac1b61",
+          "parentUid" : "a58e3d0eb321ae0ddbfdc5fd01ef4c1c",
+          "status" : "failed",
+          "time" : {
+            "start" : 1642432305800,
+            "stop" : 1642432323039,
+            "duration" : 17239
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 6,
+          "retriesStatusChange" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "TC02",
+          "uid" : "e0c368f7a1e7fb97",
+          "parentUid" : "a58e3d0eb321ae0ddbfdc5fd01ef4c1c",
+          "status" : "broken",
+          "time" : {
+            "start" : 1642432332835,
+            "stop" : 1642432332924,
+            "duration" : 89
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 6,
+          "retriesStatusChange" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a58e3d0eb321ae0ddbfdc5fd01ef4c1c"
+      }, {
+        "name" : "maintest.TestLoginPageWithBaseTestV12",
+        "children" : [ {
+          "name" : "afterMethod",
+          "uid" : "8ab49f40b34f704a",
+          "parentUid" : "36490c7cc0a613a654daa249fc9eb8fe",
+          "status" : "broken",
+          "time" : {
+            "start" : 1642431934754,
+            "stop" : 1642431934757,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "TC01_validLogin",
+          "uid" : "dd1c27e7fdff94d7",
+          "parentUid" : "36490c7cc0a613a654daa249fc9eb8fe",
+          "status" : "passed",
+          "time" : {
+            "start" : 1642432342898,
+            "stop" : 1642432355001,
+            "duration" : 12103
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 6,
+          "retriesStatusChange" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "36490c7cc0a613a654daa249fc9eb8fe"
+      } ],
+      "uid" : "d58121c3b504d7810a1f04b99cb7fa83"
+    } ],
+    "uid" : "580844f0ff48497ec79430772cf12fbd"
+  } ]
+}

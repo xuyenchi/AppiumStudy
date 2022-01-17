@@ -1,0 +1,101 @@
+{
+  "dcfd49c2dc2cc964dd098350ce52fbe1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dd1c27e7fdff94d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1642432342898,
+        "stop" : 1642432355001,
+        "duration" : 12103
+      }
+    } ]
+  },
+  "b8b9053fc2ac6279009d925a0911ef05" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8ab49f40b34f704a",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1642431934754,
+        "stop" : 1642431934757,
+        "duration" : 3
+      }
+    } ]
+  },
+  "3b3954b989b27a643ef109d6a6eaf7ed" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "45fd2365e7ac1b61",
+      "status" : "failed",
+      "statusDetails" : "expected [success] but found [hello]",
+      "time" : {
+        "start" : 1642432305800,
+        "stop" : 1642432323039,
+        "duration" : 17239
+      }
+    } ]
+  },
+  "6a798281c6cea1f6ae801d4398d6bf60" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e0c368f7a1e7fb97",
+      "status" : "broken",
+      "statusDetails" : "An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'Air-cua-Le', ip: '2405:4803:c84c:7170:ffff:ffff:ffff:ffc6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, udid: 3200bad15ec4b55f}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A750GN, deviceName: 3200bad15ec4b55f, deviceScreenDensity: 480, deviceScreenSize: 1080x2220, deviceUDID: 3200bad15ec4b55f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, udid: 3200bad15ec4b55f, viewportRect: {height: 2004, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: d802d4ac-a2b7-40a2-95ad-6ef63a9b6c1d\n*** Element info: {Using=accessibility id, value=Login}",
+      "time" : {
+        "start" : 1642432332835,
+        "stop" : 1642432332924,
+        "duration" : 89
+      }
+    } ]
+  },
+  "a22cf29d3a865578fd70dc85eb500427" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1a673e16ee6fed07",
+      "status" : "broken",
+      "statusDetails" : "java.lang.NullPointerException",
+      "time" : {
+        "start" : 1642431934634,
+        "stop" : 1642431934638,
+        "duration" : 4
+      }
+    } ]
+  }
+}
