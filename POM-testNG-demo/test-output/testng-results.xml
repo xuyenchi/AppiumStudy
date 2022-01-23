@@ -1,119 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="TestLogin" duration-ms="50085" started-at="2022-01-17T22:11:45 ICT" finished-at="2022-01-17T22:12:35 ICT">
+  <suite name="TestLogin" duration-ms="19309" started-at="2022-01-23T12:49:21 ICT" finished-at="2022-01-23T12:49:40 ICT">
     <groups>
     </groups>
-    <test name="athenLoginPage" duration-ms="50085" started-at="2022-01-17T22:11:45 ICT" finished-at="2022-01-17T22:12:35 ICT">
-      <class name="maintest.TestLoginPageWithBaseTestV12">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:maintest.TestLoginPageWithBaseTestV12@1cfd1875]" name="beforeClass" is-config="true" duration-ms="1" started-at="2022-01-17T22:12:22 ICT" finished-at="2022-01-17T22:12:22 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC01_validLogin()[pri:0, instance:maintest.TestLoginPageWithBaseTestV12@1cfd1875]" name="TC01_validLogin" duration-ms="12088" started-at="2022-01-17T22:12:22 ICT" finished-at="2022-01-17T22:12:34 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC01_validLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:maintest.TestLoginPageWithBaseTestV12@1cfd1875]" name="afterMethod" is-config="true" duration-ms="3" started-at="2022-01-17T22:12:35 ICT" description="Screenshot tcs fail" finished-at="2022-01-17T22:12:35 ICT">
+    <test name="athenLoginPage" duration-ms="18791" started-at="2022-01-23T12:49:21 ICT" finished-at="2022-01-23T12:49:39 ICT">
+      <class name="maintest.TestABC">
+        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:maintest.TestABC@6d1310f6]" name="beforeTest" is-config="true" duration-ms="59" started-at="2022-01-23T12:49:21 ICT" finished-at="2022-01-23T12:49:21 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC01_validLogin status=SUCCESS method=TestLoginPageWithBaseTestV12.TC01_validLogin()[pri:0, instance:maintest.TestLoginPageWithBaseTestV12@1cfd1875] output={null}]]]>
+                <![CDATA[3200bad15ec4b55f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8300]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:maintest.TestLoginPageWithBaseTestV12@1cfd1875]" name="afterClass" is-config="true" duration-ms="652" started-at="2022-01-17T22:12:35 ICT" finished-at="2022-01-17T22:12:35 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- maintest.TestLoginPageWithBaseTestV12 -->
-      <class name="maintest.TestLoginPageWithBaseTestV1">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@588ab592]" name="beforeClass" is-config="true" duration-ms="60" started-at="2022-01-17T22:11:45 ICT" finished-at="2022-01-17T22:11:45 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="TC01_validLogin()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@588ab592]" name="TC01_validLogin" duration-ms="17303" started-at="2022-01-17T22:11:45 ICT" finished-at="2022-01-17T22:12:03 ICT">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [success] but found [hello]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [success] but found [hello]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at maintest.TestLoginPageWithBaseTestV1.TC01_validLogin(TestLoginPageWithBaseTestV1.java:29)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TC01_validLogin()[pri:0, instance:maintest.TestABC@6d1310f6]" name="TC01_validLogin" duration-ms="18416" started-at="2022-01-23T12:49:21 ICT" finished-at="2022-01-23T12:49:39 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_validLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@588ab592]" name="afterMethod" is-config="true" duration-ms="9581" started-at="2022-01-17T22:12:03 ICT" description="Screenshot tcs fail" finished-at="2022-01-17T22:12:12 ICT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TC01_validLogin status=FAILURE method=TestLoginPageWithBaseTestV1.TC01_validLogin()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@588ab592] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="TC02()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@588ab592]" name="TC02" duration-ms="107" started-at="2022-01-17T22:12:12 ICT" finished-at="2022-01-17T22:12:12 ICT">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:maintest.TestABC@6d1310f6]" name="afterTest" is-config="true" duration-ms="105" started-at="2022-01-23T12:49:39 ICT" finished-at="2022-01-23T12:49:39 ICT">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+              <![CDATA[A session is either terminated or not started
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Air-cua-Le', ip: '2405:4803:c84c:7170:ffff:ffff:ffff:ffc6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, udid: 3200bad15ec4b55f}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A750GN, deviceName: 3200bad15ec4b55f, deviceScreenDensity: 480, deviceScreenSize: 1080x2220, deviceUDID: 3200bad15ec4b55f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, udid: 3200bad15ec4b55f, viewportRect: {height: 2004, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d802d4ac-a2b7-40a2-95ad-6ef63a9b6c1d
-*** Element info: {Using=accessibility id, value=Login}]]>
+Capabilities {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, server:CONFIG_UUID: 0d05618b-c0b8-421e-ac1c-15a..., systemPort: 8300, udid: 3200bad15ec4b55f}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A750GN, deviceName: 3200bad15ec4b55f, deviceScreenDensity: 480, deviceScreenSize: 1080x2220, deviceUDID: 3200bad15ec4b55f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 10, server:CONFIG_UUID: 0d05618b-c0b8-421e-ac1c-15a..., statBarHeight: 72, systemPort: 8300, takesScreenshot: true, udid: 3200bad15ec4b55f, viewportRect: {height: 2004, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: d83ff17d-5abe-4a4e-9d03-45f5d22ab134]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'Air-cua-Le', ip: '2405:4803:c84c:7170:ffff:ffff:ffff:ffc6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_311'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, udid: 3200bad15ec4b55f}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A750GN, deviceName: 3200bad15ec4b55f, deviceScreenDensity: 480, deviceScreenSize: 1080x2220, deviceUDID: 3200bad15ec4b55f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 10, statBarHeight: 72, takesScreenshot: true, udid: 3200bad15ec4b55f, viewportRect: {height: 2004, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: d802d4ac-a2b7-40a2-95ad-6ef63a9b6c1d
-*** Element info: {Using=accessibility id, value=Login}
+Capabilities {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: .MainActivity, appPackage: com.wdiodemoapp, automationName: uiautomator2, platformName: android, server:CONFIG_UUID: 0d05618b-c0b8-421e-ac1c-15a..., systemPort: 8300, udid: 3200bad15ec4b55f}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A750GN, deviceName: 3200bad15ec4b55f, deviceScreenDensity: 480, deviceScreenSize: 1080x2220, deviceUDID: 3200bad15ec4b55f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 10, server:CONFIG_UUID: 0d05618b-c0b8-421e-ac1c-15a..., statBarHeight: 72, systemPort: 8300, takesScreenshot: true, udid: 3200bad15ec4b55f, viewportRect: {height: 2004, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: d83ff17d-5abe-4a4e-9d03-45f5d22ab134
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -124,71 +54,66 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
 at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
-at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at models.components.global.BottomNavComponent.clickLoginTab(BottomNavComponent.java:22)
-at maintest.TestLoginPageWithBaseTestV1.TC02(TestLoginPageWithBaseTestV1.java:35)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at driver.DriverFactotyV2.quitSession(DriverFactotyV2.java:47)
+at basetest.BaseTestV2.afterTest(BaseTestV2.java:45)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC02 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@588ab592]" name="afterMethod" is-config="true" duration-ms="9423" started-at="2022-01-17T22:12:12 ICT" description="Screenshot tcs fail" finished-at="2022-01-17T22:12:22 ICT">
+        </test-method> <!-- afterTest -->
+      </class> <!-- maintest.TestABC -->
+    </test> <!-- athenLoginPage -->
+    <test name="athenLoginPage 2" duration-ms="19309" started-at="2022-01-23T12:49:21 ICT" finished-at="2022-01-23T12:49:40 ICT">
+      <class name="maintest.TestXYZ">
+        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:maintest.TestXYZ@5f577419]" name="beforeTest" is-config="true" duration-ms="59" started-at="2022-01-23T12:49:21 ICT" finished-at="2022-01-23T12:49:21 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC02 status=FAILURE method=TestLoginPageWithBaseTestV1.TC02()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@588ab592] output={null}]]]>
+                <![CDATA[9MU9X18B10W00570]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8400]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:maintest.TestLoginPageWithBaseTestV1@588ab592]" name="afterClass" is-config="true" duration-ms="529" started-at="2022-01-17T22:12:22 ICT" finished-at="2022-01-17T22:12:22 ICT">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="TC01_validLogin()[pri:0, instance:maintest.TestXYZ@5f577419]" name="TC01_validLogin" duration-ms="18143" started-at="2022-01-23T12:49:21 ICT" finished-at="2022-01-23T12:49:39 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- maintest.TestLoginPageWithBaseTestV1 -->
-    </test> <!-- athenLoginPage -->
+        </test-method> <!-- TC01_validLogin -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:maintest.TestXYZ@5f577419]" name="afterTest" is-config="true" duration-ms="742" started-at="2022-01-23T12:49:39 ICT" finished-at="2022-01-23T12:49:40 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- maintest.TestXYZ -->
+    </test> <!-- athenLoginPage 2 -->
   </suite> <!-- TestLogin -->
 </testng-results>

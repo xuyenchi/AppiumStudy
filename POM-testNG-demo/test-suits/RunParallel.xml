@@ -14,7 +14,7 @@
 		<parameter name="systemPort" value="8400" />
 
 		<classes>
-			<class name="maintest.TestABC" />
+			<class name="maintest.TestXYZ" />
 		</classes>
 	</test>
 

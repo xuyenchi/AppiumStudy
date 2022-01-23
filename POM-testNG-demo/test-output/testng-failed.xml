@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestLogin]">
-  <test thread-count="5" name="athenLoginPage(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="maintest.TestLoginPageWithBaseTestV1">
+      <class name="maintest.TestXYZ">
         <methods>
-          <include name="TC02"/>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
-          <include name="beforeClass"/>
           <include name="TC01_validLogin"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- maintest.TestLoginPageWithBaseTestV1 -->
+      </class> <!-- maintest.TestXYZ -->
     </classes>
-  </test> <!-- athenLoginPage(failed) -->
-</suite> <!-- Failed suite [TestLogin] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -32,7 +32,9 @@ public class DriverFactotyV2 {
 			desireCap.setCapability(MobileCapapilityTypeEx.APP_PACKSGE, "com.wdiodemoapp");
 			desireCap.setCapability(MobileCapapilityTypeEx.APP_ACTIVITY, ".MainActivity");
 
-			URL appiumServer = new URL("http://127.0.0.1:4723/wd/hub");
+			//URL appiumServer = new URL("http://127.0.0.1:4723/wd/hub");
+			//URL sau apply khi chạy hub parallel selenium-grid truyền địa chỉ ip của hub vào
+			URL appiumServer = new URL("http://192.168.1.97:4444/wd/hub");
 			appiumDriver = new AndroidDriver<MobileElement>(appiumServer, desireCap);
 			appiumDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		} catch (Exception e) {
