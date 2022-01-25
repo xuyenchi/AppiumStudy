@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [TestLogin]" parallel="tests">
-  <test thread-count="10" name="athenLoginPage 2(failed)" parallel="tests">
-    <parameter name="udid" value="9MU9X18B10W00570"/>
-    <parameter name="systemPort" value="8400"/>
-    <classes>
-      <class name="maintest.TestXYZ">
-        <methods>
-          <include name="TC01_validLogin"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- maintest.TestXYZ -->
-    </classes>
-  </test> <!-- athenLoginPage 2(failed) -->
   <test thread-count="10" name="athenLoginPage(failed)" parallel="tests">
     <parameter name="udid" value="3200bad15ec4b55f"/>
     <parameter name="systemPort" value="8300"/>

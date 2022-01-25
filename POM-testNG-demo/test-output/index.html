@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TestLogin">
-              <span class="suite-name border-passed">TestLogin</span>
+              <span class="suite-name border-failed">TestLogin</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestLogin" class="hide-methods failed suite-TestLogin"> (hide)</a> <!-- hide-methods failed suite-TestLogin -->
+                      <a href="#" panel-name="suite-TestLogin" class="show-methods failed suite-TestLogin"> (show)</a> <!-- show-methods failed suite-TestLogin -->
+                    </span>
+                    <div class="method-list-content failed suite-TestLogin">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestLogin" title="maintest.TestABC" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestLogin -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +116,6 @@
                       <a href="#" panel-name="suite-TestLogin" class="show-methods passed suite-TestLogin"> (show)</a> <!-- show-methods passed suite-TestLogin -->
                     </span>
                     <div class="method-list-content passed suite-TestLogin">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestLogin" title="maintest.TestABC" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TestLogin" title="maintest.TestXYZ" hash-for-method="TC01_validLogin">TC01_validLogin</a> <!-- method navigator-link -->
@@ -124,9 +133,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestLogin" class="panel TestLogin">
-          <div class="suite-TestLogin-class-passed">
+          <div class="suite-TestLogin-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">maintest.TestABC</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -135,10 +144,21 @@
                   <a name="TC01_validLogin">
                   </a> <!-- TC01_validLogin -->
                   <span class="method-name">TC01_validLogin</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at models.components.global.BottomNavComponent.clickLoginTab(BottomNavComponent.java:22)
+	at testflow.LoginFlow.login(LoginFlow.java:22)
+	at maintest.TestABC.TC01_validLogin(TestABC.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestLogin-class-passed -->
+          </div> <!-- suite-TestLogin-class-failed -->
           <div class="suite-TestLogin-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -221,17 +241,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC01_validLogin')
-data.setCell(0, 2, 'maintest.TestABC')
-data.setCell(0, 3, 18416);
+data.setCell(0, 2, 'maintest.TestXYZ')
+data.setCell(0, 3, 18350);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC01_validLogin')
-data.setCell(1, 2, 'maintest.TestXYZ')
-data.setCell(1, 3, 18143);
+data.setCell(1, 2, 'maintest.TestABC')
+data.setCell(1, 3, 2083);
 window.suiteTableData['TestLogin']= { tableData: data, tableDiv: 'times-div-TestLogin'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-TestLogin">
               </div> <!-- times-div-TestLogin -->
             </div> <!-- times-div -->
@@ -273,28 +293,31 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">maintest.TestABC</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC01_validLogin</span>
-                <span class="method-start">179 ms</span>
+                <span class="method-start">181 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">maintest.TestXYZ</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC01_validLogin</span>
-                <span class="method-start">179 ms</span>
+                <span class="method-start">181 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">18534 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">maintest.TestABC</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">afterTest</span>
-                <span class="method-start">18601 ms</span>
+                <span class="method-start">2414 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">maintest.TestXYZ</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">18559 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
